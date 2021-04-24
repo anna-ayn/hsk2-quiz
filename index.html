@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HSK2 - Quiz</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script type="application/javascript" src="js/hanzi-writer.js"></script>
+</head>
+
+
+<body>
+  <main>
+    <h1>HSK2 - QUIZ</h1>
+    <p>Write the Chinese character of: </p>
+
+    <div class="dashboard">
+      <ul class="character">
+        <li id="ch1">
+          <p>You (nín)</p>
+          <div class="OneCh" id="ch1-div"></div>
+        </li>
+        <li id="ch2">
+          <p>It (tā)</p>
+          <div class="OneCh" id="ch2-div"></div>
+        </li>
+         <li id="ch3">
+          <p>Everyone (dàjiā)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch3a-div"></div>
+	          <div class="OneCh" id="ch3b-div"></div>
+	      </div>
+        </li>       
+        <li id="ch4">
+          <p>Every (měi)</p>
+          <div class="OneCh" id="ch4-div"></div>
+        </li>
+        <li  id="ch5">
+          <p>Why (wèishénme)</p>
+          <div class="ThreeCh">
+            <div class="OneCh" id="ch5a-div"></div>
+            <div class="OneCh" id="ch5b-div"></div>
+            <div class="OneCh" id="ch5c-div"></div>
+          </div>
+        </li>
+        <li id="ch6">
+          <p>Two (liǎng)</p>
+          <div class="OneCh" id="ch6-div"></div>
+        </li>
+        <li id="ch7">
+          <p>Hundred (bǎi)</p>
+          <div class="OneCh" id="ch7-div"></div>
+        </li>
+        <li id="ch8">
+          <p>Thousand (qiān)</p>
+          <div class="OneCh" id="ch8-div"></div>
+        </li>
+         <li id="ch9">
+          <p>First (dìyī)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch9a-div"></div>
+	          <div class="OneCh" id="ch9b-div"></div>
+      	  </div>
+        </li>   
+        <li id="ch10">
+          <p>Number of times (cì)</p>
+          <div class="OneCh" id="ch10-div"></div>
+        </li>
+         <li id="ch11">
+          <p>Kilogram (gōngjīn)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch11a-div"></div>
+	          <div class="OneCh" id="ch11b-div"></div>
+	      </div>
+        </li> 
+        <li id="ch12">
+          <p>Yuan (yuán)</p>
+          <div class="OneCh" id="ch12-div"></div>
+        </li>
+        <li id="ch13">
+          <p>Piece (jiàn)</p>
+          <div class="OneCh" id="ch13-div"></div>
+        </li>
+        <li id="ch14">
+          <p>Sheet (zhāng)</p>
+          <div class="OneCh" id="ch14-div"></div>
+        </li>
+        <li id="ch15">
+          <p>Other (bié)</p>
+          <div class="OneCh" id="ch15-div"></div>
+        </li>
+         <li id="ch16">
+          <p>Very (fēicháng)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch16a-div"></div>
+	          <div class="OneCh" id="ch16b-div"></div>
+	      </div>
+        </li>  
+        <li id="ch17">
+          <p>Likewise (yě)</p>
+          <div class="OneCh" id="ch17-div"></div>
+        </li>
+        <li id="ch18">
+          <p>Still (hái)</p>
+          <div class="OneCh" id="ch18-div"></div>
+        </li>
+        <li id="ch19">
+          <p>Most (zuì)</p>
+          <div class="OneCh" id="ch19-div"></div>
+        </li>
+        <li id="ch20">
+          <p>Real (zhēn)</p>
+          <div class="OneCh" id="ch20-div"></div>
+        </li>
+         <li id="ch21">
+          <p>Be being (zhèngzài)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch21a-div"></div>
+	          <div class="OneCh" id="ch21b-div"></div>
+	      </div>
+        </li> 
+         <li id="ch22">
+          <p>Already (yǐjīng)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch22a-div"></div>
+	          <div class="OneCh" id="ch22b-div"></div>
+	      </div>
+        </li>         
+         <li id="ch23">
+          <p>Together (yìqǐ)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch23a-div"></div>
+	          <div class="OneCh" id="ch23b-div"></div>
+	      </div>
+        </li> 
+        <li id="ch24">
+          <p>Again (zài)</p>
+          <div class="OneCh" id="ch24-div"></div>
+        </li>
+        <li id="ch25">
+          <p>At once (jiǜ)</p>
+          <div class="OneCh" id="ch25-div"></div>
+        </li>
+         <li id="ch26">
+          <p>Because (yīnwèi)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch26a-div"></div>
+	          <div class="OneCh" id="ch26b-div"></div>
+	      </div>
+        </li> 
+         <li id="ch27">
+          <p>So (suǒyǐ)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch27a-div"></div>
+	          <div class="OneCh" id="ch27b-div"></div>
+	      </div>
+        </li>         
+         <li id="ch28">
+          <p>But (dànshì)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch28a-div"></div>
+	          <div class="OneCh" id="ch28b-div"></div>
+	      </div>
+        </li>
+        <li id="ch29">
+          <p>From (cóng)</p>
+          <div class="OneCh" id="ch29-div"></div>
+        </li>
+        <li id="ch30">
+          <p>This (cǐ)</p>
+          <div class="OneCh" id="ch30-div"></div>
+        </li>
+        <li id="ch31">
+          <p>Towards (xiàng)</p>
+          <div class="OneCh" id="ch31-div"></div>
+        </li>
+        <li id="ch32">
+          <p>Leave (lí)</p>
+          <div class="OneCh" id="ch32-div"></div>
+        </li>
+        <li id="ch33">
+          <p>Aux used after a verb/To get (de)</p>
+          <div class="OneCh" id="ch33-div"></div>
+        </li>
+        <li id="ch34">
+          <p>Aux that indicates an action in progress(zhe)</p>
+          <div class="OneCh" id="ch34-div"></div>
+        </li>
+        <li id="ch35">
+          <p>Experienced action marker (guo)</p>
+          <div class="OneCh" id="ch35-div"></div>
+        </li>
+        <li id="ch36">
+          <p>Modal particle indicating suggestion (ba)</p>
+          <div class="OneCh" id="ch36-div"></div>
+        </li>
+        <li id="ch37">
+          <p>Right (duì)</p>
+          <div class="OneCh" id="ch37-div"></div>
+        </li>
+         <li id="ch38">
+          <p>Mutton (yángròu)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch38a-div"></div>
+	          <div class="OneCh" id="ch38b-div"></div>
+	      </div>
+        </li> 
+         <li id="ch39">
+          <p>Milk (niúnǎi)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch39a-div"></div>
+	          <div class="OneCh" id="ch39b-div"></div>
+	      </div>
+        </li>         
+         <li id="ch40">
+          <p>Egg (jīdàn)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch40a-div"></div>
+	          <div class="OneCh" id="ch40b-div"></div>
+	      </div>
+        </li>
+         <li id="ch41">
+          <p>Watermelon (xīguā)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch41a-div"></div>
+	          <div class="OneCh" id="ch41b-div"></div>
+	      </div>
+        </li> 
+         <li id="ch42">
+          <p>Coffee (kāfēi)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch42a-div"></div>
+	          <div class="OneCh" id="ch42b-div"></div>
+	      </div>
+        </li>         
+        <li  id="ch43">
+          <p>Bike (zìxíngchē)</p>
+          <div class="ThreeCh">
+            <div class="OneCh" id="ch43a-div"></div>
+            <div class="OneCh" id="ch43b-div"></div>
+            <div class="OneCh" id="ch43c-div"></div>
+          </div>
+        </li>
+        <li id="ch44">
+          <p>Fish (yú)</p>
+          <div class="OneCh" id="ch44-div"></div>
+        </li>
+        <li id="ch45">
+          <p>Boat (chuán)</p>
+          <div class="OneCh" id="ch45-div"></div>
+        </li>
+        <li id="ch46">
+          <p>Snow (xué)</p>
+          <div class="OneCh" id="ch46-div"></div>
+        </li>
+        <li id="ch47">
+          <p>Medicine (yào)</p>
+          <div class="OneCh" id="ch47-div"></div>
+        </li>
+         <li id="ch48">
+          <p>Cellphone (shǒujī)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch48a-div"></div>
+	          <div class="OneCh" id="ch48b-div"></div>
+	      </div>
+        </li> 
+         <li id="ch49">
+          <p>Watch (shǒubiǎo)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch49a-div"></div>
+	          <div class="OneCh" id="ch49b-div"></div>
+	      </div>
+        </li>         
+         <li id="ch50">
+          <p>Eye (yǎnjīng)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch50a-div"></div>
+	          <div class="OneCh" id="ch50b-div"></div>
+	      </div>
+        </li>
+        <li id="ch51">
+          <p>Airport (jīchǎng)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch51a-div"></div>
+	          <div class="OneCh" id="ch51b-div"></div>
+	      </div>
+        </li> 
+         <li id="ch52">
+          <p>Classroom (jiàoshì)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch52a-div"></div>
+	          <div class="OneCh" id="ch52b-div"></div>
+	      </div>
+        </li>         
+         <li id="ch53">
+          <p>Room (fángjiān)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch53a-div"></div>
+	          <div class="OneCh" id="ch53b-div"></div>
+	      </div>
+        </li>
+        <li id="ch54">
+          <p>Road (lù)</p>
+          <div class="OneCh" id="ch54-div"></div>
+        </li>
+         <li id="ch55">
+          <p>Left (zuǒbiān)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch55a-div"></div>
+	          <div class="OneCh" id="ch55b-div"></div>
+	      </div>
+        </li> 
+         <li id="ch56">
+          <p>Right (yòubiān)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch56a-div"></div>
+	          <div class="OneCh" id="ch56b-div"></div>
+	      </div>
+        </li>         
+        <li id="ch57">
+          <p>Out (wài)</p>
+          <div class="OneCh" id="ch57-div"></div>
+        </li>
+         <li id="ch58">
+          <p>Side (pángbiān)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch58a-div"></div>
+	          <div class="OneCh" id="ch58b-div"></div>
+	      </div>
+        </li> 
+         <li id="ch59">
+          <p>Morning (zǎoshàng)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch59a-div"></div>
+	          <div class="OneCh" id="ch59b-div"></div>
+	      </div>
+        </li>         
+         <li id="ch60">
+          <p>Night (wǎnshàng)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch60a-div"></div>
+	          <div class="OneCh" id="ch60b-div"></div>
+	      </div>
+        </li>
+        <li id="ch61">
+          <p>Hour (xiǎoshí)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch61a-div"></div>
+	          <div class="OneCh" id="ch61b-div"></div>
+	      </div>
+        </li> 
+         <li id="ch62">
+          <p>Time (shíjiān)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch62a-div"></div>
+	          <div class="OneCh" id="ch62b-div"></div>
+	      </div>
+        </li>         
+         <li id="ch63">
+          <p>Last year (qùnián)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch63a-div"></div>
+	          <div class="OneCh" id="ch63b-div"></div>
+	      </div>
+        </li>
+        <li id="ch64">
+          <p>Number (hào)</p>
+          <div class="OneCh" id="ch64-div"></div>
+        </li>
+         <li id="ch65">
+          <p>Birthday (shēngrì)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch65a-div"></div>
+	          <div class="OneCh" id="ch65b-div"></div>
+	      </div>
+        </li> 
+         <li id="ch66">
+          <p>Brother (gēge)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch66a-div"></div>
+	          <div class="OneCh" id="ch66b-div"></div>
+	      </div>
+        </li>     
+         <li id="ch67">
+          <p>Sister (jiějie)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch67a-div"></div>
+	          <div class="OneCh" id="ch67b-div"></div>
+	      </div>
+        </li>         
+         <li id="ch68">
+          <p>Younger brother (dìdi)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch68a-div"></div>
+	          <div class="OneCh" id="ch68b-div"></div>
+	      </div>
+        </li>
+         <li id="ch69">
+          <p>Younger sister (mèimei)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch69a-div"></div>
+	          <div class="OneCh" id="ch69b-div"></div>
+	      </div>
+        </li>         
+         <li id="ch70">
+          <p>Husband (zhàngfu)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch70a-div"></div>
+	          <div class="OneCh" id="ch70b-div"></div>
+	      </div>
+        </li>
+        <li id="ch71">
+          <p>Wife (qīzi)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch71a-div"></div>
+	          <div class="OneCh" id="ch71b-div"></div>
+	      </div>
+        </li> 
+         <li id="ch72">
+          <p>Child (háizi)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch72a-div"></div>
+	          <div class="OneCh" id="ch72b-div"></div>
+	      </div>
+        </li>         
+        <li id="ch73">
+          <p>Man (nánrén)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch73a-div"></div>
+	          <div class="OneCh" id="ch73b-div"></div>
+	      </div>
+        </li> 
+         <li id="ch74">
+          <p>Woman (nǚrén)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch74a-div"></div>
+	          <div class="OneCh" id="ch74b-div"></div>
+	      </div>
+        </li>         
+        <li  id="ch75">
+          <p>Waiter (fúwùyuán)</p>
+          <div class="ThreeCh">
+            <div class="OneCh" id="ch75a-div"></div>
+            <div class="OneCh" id="ch75b-div"></div>
+            <div class="OneCh" id="ch75c-div"></div>
+          </div>
+        </li>
+         <li id="ch76">
+          <p>Body (shēntǐ)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch76a-div"></div>
+	          <div class="OneCh" id="ch76b-div"></div>
+	      </div>
+        </li>     
+         <li id="ch77">
+          <p>Bus (gōnggòngqìchē)</p>
+          <div class="FourCh">
+	          <div class="OneCh" id="ch77a-div"></div>
+	          <div class="OneCh" id="ch77b-div"></div>
+	          <div class="OneCh" id="ch77c-div"></div>
+	          <div class="OneCh" id="ch77d-div"></div>
+	      </div>
+        </li>         
+         <li id="ch78">
+          <p>Newspaper (bàozhǐ)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch78a-div"></div>
+	          <div class="OneCh" id="ch78b-div"></div>
+	      </div>
+        </li>
+        <li id="ch79">
+          <p>Door (mén)</p>
+          <div class="OneCh" id="ch79-div"></div>
+        </li>
+        <li id="ch80">
+          <p>Topic (tí)</p>
+          <div class="OneCh" id="ch80-div"></div>
+        </li>
+        <li id="ch81">
+          <p>Lesson (kè)</p>
+          <div class="OneCh" id="ch81-div"></div>
+        </li>
+        <li id="ch82">
+          <p>Surname (xìng)</p>
+          <div class="OneCh" id="ch82-div"></div>
+        </li>
+         <li id="ch83">
+          <p>Question (wèntí)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch83a-div"></div>
+	          <div class="OneCh" id="ch83b-div"></div>
+	      </div> 
+        <li id="ch84">
+          <p>Matter (shìqing)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch84a-div"></div>
+	          <div class="OneCh" id="ch84b-div"></div>
+	      </div>
+        </li>
+         <li id="ch85">
+          <p>Exam (kǎoshì)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch85a-div"></div>
+	          <div class="OneCh" id="ch85b-div"></div>
+	      </div>
+        </li> 
+         <li id="ch86">
+          <p>Ticket (piào)</p>
+	      <div class="OneCh" id="ch86-div"></div>
+        </li>     
+         <li id="ch87">
+          <p>Meaning (yìsi)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch87a-div"></div>
+	          <div class="OneCh" id="ch87b-div"></div>
+	      </div>
+        </li>         
+         <li id="ch88">
+          <p>Color (yánsè)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch88a-div"></div>
+	          <div class="OneCh" id="ch88b-div"></div>
+	      </div>
+        </li>
+         <li id="ch89">
+          <p>Welcome (huānyíng)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch89a-div"></div>
+	          <div class="OneCh" id="ch89b-div"></div>
+	      </div>
+        </li>  
+        <li id="ch90">
+          <p>To ask (wèn)</p>
+          <div class="OneCh" id="ch90-div"></div>
+        </li>
+        <li id="ch91">
+          <p>To walk (zǒu)</p>
+          <div class="OneCh" id="ch91-div"></div>
+        </li>
+        <li id="ch92">
+          <p>To enter (jìn)</p>
+          <div class="OneCh" id="ch92-div"></div>
+        </li>
+        <li id="ch93">
+          <p>To come (chū)</p>
+          <div class="OneCh" id="ch93-div"></div>
+        </li>
+         <li id="ch94">
+          <p>To run (pǎobù)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch94a-div"></div>
+	          <div class="OneCh" id="ch94b-div"></div>
+	      </div>
+        </li>  
+        <li id="ch95">
+          <p>To arrive (dào)</p>
+          <div class="OneCh" id="ch95-div"></div>
+        </li>
+        <li id="ch96">
+          <p>To wear (chuān)</p>
+          <div class="OneCh" id="ch96-div"></div>
+        </li>
+        <li id="ch97">
+          <p>To wash (xǐ)</p>
+          <div class="OneCh" id="ch97-div"></div>
+        </li>
+        <li id="ch98">
+          <p>To give (gěi)</p>
+          <div class="OneCh" id="ch98-div"></div>
+        </li>
+        <li id="ch99">
+          <p>To find (zhǎo)</p>
+          <div class="OneCh" id="ch99-div"></div>
+        </li>
+        <li id="ch100">
+          <p>To understand (dǒng)</p>
+          <div class="OneCh" id="ch100-div"></div>
+        </li>
+        <li id="ch101">
+          <p>To smile (xiào)</p>
+          <div class="OneCh" id="ch101-div"></div>
+        </li>
+         <li id="ch102">
+          <p>To answer (huídá)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch102a-div"></div>
+	          <div class="OneCh" id="ch102b-div"></div>
+	      </div>
+        </li>         
+        <li id="ch103">
+          <p>To tell (gàosù)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch103a-div"></div>
+	          <div class="OneCh" id="ch103b-div"></div>
+	      </div>
+        </li> 
+         <li id="ch104">
+          <p>To prepare (zhǔnbèi)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch104a-div"></div>
+	          <div class="OneCh" id="ch104b-div"></div>
+	      </div>
+        </li>         
+        <li  id="ch105">
+          <p>To begin (kāishǐ)</p>
+          <div class="TwoCh">
+            <div class="OneCh" id="ch105a-div"></div>
+            <div class="OneCh" id="ch105b-div"></div>
+          </div>
+        </li>
+         <li id="ch106">
+          <p>To introduce (jièshào)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch106a-div"></div>
+	          <div class="OneCh" id="ch106b-div"></div>
+	      </div>
+        </li>     
+         <li id="ch107">
+          <p>To help (bāngzhù)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch107a-div"></div>
+	          <div class="OneCh" id="ch107b-div"></div>
+	      </div>
+        </li>         
+         <li id="ch108">
+          <p>To play (wán)</p>
+          <div class="OneCh" id="ch108-div"></div>
+        <li id="ch109">
+          <p>To present (sòng)</p>
+          <div class="OneCh" id="ch109-div"></div>
+        </li>
+        <li id="ch110">
+          <p>To wait (děng)</p>
+          <div class="OneCh" id="ch110-div"></div>
+        </li>
+        <li id="ch111">
+          <p>To let (ràng)</p>
+          <div class="OneCh" id="ch111-div"></div>
+        </li>
+         <li id="ch112">
+          <p>To get up (qǐchuáng)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch112a-div"></div>
+	          <div class="OneCh" id="ch112b-div"></div>
+	      </div>
+        </li>         
+        <li id="ch113">
+          <p>To sing (chànggē)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch113a-div"></div>
+	          <div class="OneCh" id="ch113b-div"></div>
+	      </div>
+        </li> 
+         <li id="ch114">
+          <p>To dance (tiàowǔ)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch114a-div"></div>
+	          <div class="OneCh" id="ch114b-div"></div>
+	      </div>
+        </li>         
+        <li  id="ch115">
+          <p>To travel (lǚyóu)</p>
+          <div class="TwoCh">
+            <div class="OneCh" id="ch115a-div"></div>
+            <div class="OneCh" id="ch115b-div"></div>
+          </div>
+        </li>
+         <li id="ch116">
+          <p>To be on duty (shàngbān)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch116a-div"></div>
+	          <div class="OneCh" id="ch116b-div"></div>
+	      </div>
+        </li>     
+         <li id="ch117">
+          <p>To fall ill (shēngbìng)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch117a-div"></div>
+	          <div class="OneCh" id="ch117b-div"></div>
+	      </div>
+        </li>     
+         <li id="ch118">
+          <p>To rest (xiūxi)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch118a-div"></div>
+	          <div class="OneCh" id="ch118b-div"></div>
+	      </div>
+        </li> 
+         <li id="ch119">
+          <p>To exercise (yùndòng)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch119a-div"></div>
+	          <div class="OneCh" id="ch119b-div"></div>
+	      </div>
+        </li>         
+         <li id="ch120">
+          <p>To swim (yóuyǒng)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch120a-div"></div>
+	          <div class="OneCh" id="ch120b-div"></div>
+	      </div>
+        </li>
+        <li  id="ch121">
+          <p>To play football (tīzúqiú)</p>
+          <div class="ThreeCh">
+            <div class="OneCh" id="ch121a-div"></div>
+            <div class="OneCh" id="ch121b-div"></div>
+            <div class="OneCh" id="ch121c-div"></div>
+          </div>
+        </li>
+        <li  id="ch122">
+          <p>To play basketball (dǎlánqiú)</p>
+          <div class="ThreeCh">
+            <div class="OneCh" id="ch122a-div"></div>
+            <div class="OneCh" id="ch122b-div"></div>
+            <div class="OneCh" id="ch122c-div"></div>
+          </div>
+        </li>
+        <li id="ch123">
+          <p>To finish (wán)</p>
+          <div class="OneCh" id="ch123-div"></div>
+        </li>
+         <li id="ch124">
+          <p>To think (juédé)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch124a-div"></div>
+	          <div class="OneCh" id="ch124b-div"></div>
+	      </div>
+        </li>         
+        <li  id="ch125">
+          <p>To know (zhīdào)</p>
+          <div class="TwoCh">
+            <div class="OneCh" id="ch125a-div"></div>
+            <div class="OneCh" id="ch125b-div"></div>
+          </div>
+        </li>
+         <li id="ch126">
+          <p>To hope (xīwàng)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch126a-div"></div>
+	          <div class="OneCh" id="ch126b-div"></div>
+	      </div>
+        </li>     
+         <li id="ch127">
+          <p>Can (kěyǐ)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch127a-div"></div>
+	          <div class="OneCh" id="ch127b-div"></div>
+	      </div>
+        </li>    
+        <li id="ch128">
+          <p>To want/ask for (yào)</p>
+          <div class="OneCh" id="ch128-div"></div>
+        </li>
+         <li id="ch129">
+          <p>May (kěnéng)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch129a-div"></div>
+	          <div class="OneCh" id="ch129b-div"></div>
+      	  </div>
+        </li>   
+        <li id="ch130">
+          <p>Tall (gāo)</p>
+          <div class="OneCh" id="ch130-div"></div>
+        </li>
+        <li id="ch131">
+          <p>Red (hóng)</p>
+          <div class="OneCh" id="ch131-div"></div>
+        </li>
+        <li id="ch132">
+          <p>White (bái)</p>
+          <div class="OneCh" id="ch132-div"></div>
+        </li>
+        <li id="ch133">
+          <p>Black (hēi)</p>
+          <div class="OneCh" id="ch133-div"></div>
+        </li>
+         <li id="ch134">
+          <p>Busy (máng)</p>
+          <div class="OneCh" id="ch134-div"></div>
+        </li>  
+        <li id="ch135">
+          <p>Fast (kuài)</p>
+          <div class="OneCh" id="ch135-div"></div>
+        </li>
+        <li id="ch136">
+          <p>Slow (màn)</p>
+          <div class="OneCh" id="ch136-div"></div>
+        </li>
+        <li id="ch137">
+          <p>Far (yuǎn)</p>
+          <div class="OneCh" id="ch137-div"></div>
+        </li>
+        <li id="ch138">
+          <p>Close/Near (jìn)</p>
+          <div class="OneCh" id="ch138-div"></div>
+        </li>
+        <li id="ch139">
+          <p>Delicious (hǎochī)</p>
+           <div class="TwoCh">
+	          <div class="OneCh" id="ch139a-div"></div>
+	          <div class="OneCh" id="ch139b-div"></div>
+	      </div>
+        </li>
+        <li id="ch140">
+          <p>Tired (lèi)</p>
+          <div class="OneCh" id="ch140-div"></div>
+        </li>
+        <li id="ch141">
+          <p>Long (cháng)</p>
+          <div class="OneCh" id="ch141-div"></div>
+        </li>
+        <li id="ch142">
+          <p>New (xīn)</p>
+          <div class="OneCh" id="ch142-div"></div>
+        </li>
+        <li id="ch143">
+          <p>Expensive (guì)</p>
+          <div class="OneCh" id="ch143-div"></div>
+        </li>
+         <li id="ch144">
+          <p>Cheap (piányi)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch144a-div"></div>
+	          <div class="OneCh" id="ch144b-div"></div>
+	      </div>
+        </li>  
+        <li id="ch145">
+          <p>Fine/clear (qíng)</p>
+          <div class="OneCh" id="ch145-div"></div>
+        </li>
+        <li id="ch146">
+          <p>Cloudy (yīn)</p>
+          <div class="OneCh" id="ch146-div"></div>
+        </li>
+        <li id="ch147">
+          <p>Wrong (cuò)</p>
+          <div class="OneCh" id="ch147-div"></div>
+        </li>
+        <li id="ch148">
+          <p>Happy (kuàilè)</p>
+          <div class="TwoCh">
+	          <div class="OneCh" id="ch148a-div"></div>
+	          <div class="OneCh" id="ch148b-div"></div>
+	      </div>
+        </li>
+      </ul>
+
+
+
+    <!--button id="quiz-reset">Reset</button>
+    <button id="sig">Siguiente</button-->
+    
+    <div id="options">
+      <div id="options-1">
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+      <!-- div id="options-2">
+        <p>How was it?</p>
+        <button id="hard">Hard</button>
+        <button id="so-so">So so</button>
+        <button id="easy">Easy</button>
+      </div>
+    </div>
+  </div>
+</main-->
+
+
+    <!-- div id="word-details">
+      <p><span>Pinyin:</span> nǐ</p>
+      <p><span>Sentence:</span> 你好吗？</p>
+    </div -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+
+
+<script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>

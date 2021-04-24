@@ -1,0 +1,63 @@
+html {
+    box-sizing: border-box;
+
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.options-2 {
+	display: none;
+}
+
+body { 
+  background-color: #444343;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  color: orange;
+  text-align: center;
+}
+
+main {
+  display: inline-block;
+
+}
+
+
+.character {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+.OneCh {
+  background-image: url(../img/hanzisheet.jpg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 260px;
+  width: 260px;
+  margin: 10px;
+  justify-content: center;
+}
+
+
+@media (min-width: 768px) {
+  .TwoCh, .ThreeCh, .FourCh {
+    display: flex;
+
+  }
+}
+
+
+button {
+  background-color: orange;
+  color: black;
+}
+
